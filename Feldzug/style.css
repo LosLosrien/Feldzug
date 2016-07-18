@@ -1,0 +1,228 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+/* ToDo: clean amd comment this mess up, less ID, more class */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: hidden; 
+	font-family: "Open Sans", sans-serif;
+}
+
+#mainCanvas {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	background-color: #16224C;
+}
+
+.hud {	
+	position: fixed;
+	background: rgba(242, 242, 242, 0.8);
+	border: 1px solid #000000;
+	z-index: 1;
+}
+
+#titleBar {
+	top: 0; 
+	left: 0; 
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.title {
+	display: inline-block;
+	line-height: 40px;
+}
+
+.smallTitle {
+	line-height: 20px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+#gameTitle  {
+	font-size: 25px;
+	font-weight: 800;
+}
+
+#modeTitle  {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+/* Menu */
+
+/* Menu Placement */
+#menu {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+    height: 40px;
+    width: 40px;
+}
+
+/* Menu Hoverbutton */
+#menuHover {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-left: 1px solid #000000;
+}
+
+.menuLine{
+	border: 2px solid black;
+	border-radius: 15px;
+	margin: auto;
+	width: 25px;
+	height: 0px;
+	margin-top: 7px;
+}
+
+/* Menu */
+
+.dropdownMenu {
+    position: absolute;
+	margin: 0;
+	padding: 0;
+	display: none;
+	list-style: none;
+	background-color: #f2f2f2;
+}
+
+#mainMenu {
+    top: 40px;
+    right: 0; 
+}
+
+.menuEntry {
+	height: 32px;
+	width: 150px;
+	line-height: 40px;
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+	padding: 4px;
+}
+
+.menuEntry:last-child {
+	border-bottom: 1px solid #000000;
+}
+
+.menuEntry img{
+	height: 32px;
+	width: 32px;
+	float: left;
+}
+
+.menuEntry div{
+	height: 32px;
+	width: 118px;
+	float: left;
+	line-height: 32px;
+	font-weight: 600;
+	font-size: 20px;
+    text-align: center;
+}
+
+/* Submenu */
+
+.subMenu {
+    top: 0;
+    right: 159px; 
+}
+
+.subMenuEntry  div{
+	width: 100%;
+}
+
+.subMenuEntry div.submenuText {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 158px; 
+	border: 1px solid #000000;
+	height: auto;
+	width: 300px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+	padding: 8px;
+	background-color: #f2f2f2;
+}
+
+/* Hover Display */
+
+#menu:hover #mainMenu, .menuEntry:hover .subMenu, .subMenuEntry:hover .submenuText  {
+	display: block;
+}
+
+/* DeploymentSelectionBox */
+#deploymentSelectionBox {
+	width: 156px;
+	top: 50px; 
+	left: 10px;
+}
+
+.unitSelectionBox {
+	float: left;
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+
+.unitSelectionBox img {
+	margin: 4px;
+}
+
+/* InfoBox */
+
+#infoBox {
+	bottom: 10px;
+	left: 10px;
+	width: 300px;
+	height: 150px;
+}
+
+#infoBoxTitle {
+	border-bottom: 1px solid #000000;
+	width: 292;
+	padding: 4px;
+}
+
+#infoBoxScroll {
+	overflow-y: scroll;
+	height: 113px;
+	background-color: #f2f2f2;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#infoBoxInfo {
+	text-align: left;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 15px;
+}    
+
+/* Util */
+
+.hidden {
+	display: none;
+}
+
+.brighter {
+	filter: brightness(120%);
+}
+
+.darker {
+	filter: brightness (80%);
+}

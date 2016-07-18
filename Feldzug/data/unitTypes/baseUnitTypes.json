@@ -1,0 +1,15 @@
+[
+	{
+		"id": 0,
+		"name": "infantry",
+		"longName": "Infantry",
+		"imageName": "infantry",
+		"movementType": "footed",
+		"baseMovementSpeed": 3,
+		"baseHP": 10,
+		"levelMods" : {
+			"hpMod" : 1,
+			"movementSpeedMod" : 0.34
+		}
+	}
+]

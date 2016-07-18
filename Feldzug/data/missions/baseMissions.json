@@ -1,0 +1,16 @@
+[
+	{
+		"id": 0,
+		"name": "example",
+		"longName": "Example",
+		"mapID": 0,
+		"options": {"noDeploymentPhase": false},
+		"playerUnits": [
+			{"unitTypeID": 0},
+			{"unitTypeID": 0},
+			{"unitTypeID": 0},
+			{"unitTypeID": 0},
+			{"unitTypeID": 0}
+		]
+	}
+]

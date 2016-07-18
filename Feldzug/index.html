@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%;">
+  <head>
+	<title>Feldzug</title>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+	<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/Modell.Library.js"></script>
+    <script src="scripts/Modell.Util.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/dataClasses.js"></script>
+    <script src="scripts/drawing.js"></script>
+    <script src="scripts/controls.js"></script>
+    <script src="scripts/gameController.js"></script>
+    <script src="scripts/ai.js"></script>
+  </head>
+  <body onload="FeldzugApp.Main.init();">
+	<div id="titleBar" class="hud">
+		<div id="title">
+			<div id="gameTitle" class="title">Feldzug - </div>
+			<div id="modeTitle" class="title">Loading</div>
+		</div>
+		<div id="menu">
+			<div id="menuHover" ><div class="menuLine"></div><div class="menuLine"></div><div class="menuLine"></div></div>    
+			<ul id="mainMenu" class="dropdownMenu">
+				<li id="helpMenuEntry" class="menuEntry">
+					<img id="helpIcon" src="images/helpIcon.png"><div>Help</div>
+					<ul id="subMenuHelp" class="subMenu dropdownMenu">
+						<li id="mapNavigationSubMenuEntry" class="subMenuEntry menuEntry">
+							<div>Map Navigation</div>
+							<div class="submenuText">The Map can be moved by dragging or pressing the arrow keys and zoomed by scrolling the mouse wheel.</div>
+						</li>
+						<li id="DeploymentSubMenuEntry" class="subMenuEntry menuEntry">
+							<div>Deployment</div>
+							<div class="submenuText">During the "Deployment"-phase the available units are shown on the top left. Hover a unit or a tile for more info about it. Click a unit to highlight the available deployment zones. Click on a highlighted deployment zone to deploy the selected unit.</div>
+						</li>
+					</ul>
+				</li>
+				<li id="helpMenuEntry" class="menuEntry">
+					<img id="helpIcon" src="images/helpIcon.png"><div>Test</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="infoBox" class="hud">
+		<div id="infoBoxTitle" class="smallTitle">Infobox</div>
+		<div id="infoBoxScroll">
+			<div id="infoBoxInfo">Try hovering over a unit, a tile or other ingame elements to find out more about them.</div>
+		</div>
+	</div>
+    <canvas id="mainCanvas"></canvas>
+  </body>
+</html>

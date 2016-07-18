@@ -1,0 +1,45 @@
+[
+	{
+		"id": 0,
+		"name": "grass",
+		"longName": "Grass",
+		"imageName": "grass",
+		"movementCost": {"footed": 1, "wheeled": 1, "airborne": 1, "swimming": 0},
+		"visibilityCost": "1"
+	},{
+		"id": 1,
+		"name": "undergrowth",
+		"longName": "Undergrowth",
+		"imageName": "undergrowth",
+		"movementCost": {"footed": 1, "wheeled": 2, "airborne": 1, "swimming": 0},
+		"visibilityCost": "2"
+	},{
+		"id": 2,
+		"name": "forest",
+		"longName": "Forest",
+		"imageName": "forest",
+		"movementCost": {"footed": 2, "wheeled": 3, "airborne": 1, "swimming": 0},
+		"visibilityCost": "3"
+	},{
+		"id": 3,
+		"name": "mountain",
+		"longName": "Mountain",
+		"imageName": "mountain",
+		"movementCost": {"footed": 3, "wheeled": 3, "airborne": 1, "swimming": 0},
+		"visibilityCost": "4"
+	},{
+		"id": 4,
+		"name": "shallowWater",
+		"longName": "Shallow Water",
+		"imageName": "shallowWater",
+		"movementCost": {"footed": 3, "wheeled": 2, "airborne": 1, "swimming": 2},
+		"visibilityCost": "1"
+	},{
+		"id": 5,
+		"name": "deepWater",
+		"longName": "Deep Water",
+		"imageName": "deepWater",
+		"movementCost": {"footed": 0, "wheeled": 0, "airborne": 1, "swimming": 1},
+		"visibilityCost": "1"
+	}
+]
